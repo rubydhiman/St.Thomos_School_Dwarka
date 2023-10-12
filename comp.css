@@ -1,0 +1,112 @@
+h1{
+    font-size: 4.5rem;
+}
+.manager-heading{
+    font-size: 4.5rem;
+}
+
+
+.heading-conatiner{
+    background: #eee;
+    height: 250px;
+    width: auto;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+
+.main__image-left{
+    width: 300px;
+    height: 250px;
+    /* float: left !important; */
+    margin: 5px !important;
+}
+.outer1 li{text-decoration: none !important;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+   }
+.outer1 a{
+
+
+    color: white;
+    position: relative;
+   }
+   
+.outer1 a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color:goldenrod;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s ease-in-out;
+  }
+
+
+.outer1 a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+ 
+}
+
+
+
+
+.side-nav ul li a:hover{
+ color:white !important;
+ transform: translateY(-38px);
+}
+
+
+.heading-underline-red {
+        padding-bottom: 4px;
+       border-bottom: 0.5rem solid #9d2235;  
+    }
+
+
+    .heading-inline {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+
+    button {
+        --c:  maroon; /* the color*/
+       
+        box-shadow: 0 0 0 .1em inset var(--c);
+        --_g: linear-gradient(var(--c) 0 0) no-repeat;
+        background:
+          var(--_g) calc(var(--_p,0%) - 100%) 0%,
+          var(--_g) calc(200% - var(--_p,0%)) 0%,
+          var(--_g) calc(var(--_p,0%) - 100%) 100%,
+          var(--_g) calc(200% - var(--_p,0%)) 100%;
+        background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+        outline-offset: .1em;
+        transition: background-size .4s, background-position 0s .4s;
+      }
+      button:hover {
+        --_p: 100%;
+        transition: background-position .4s, background-size 0s;
+        color: #fff;
+      }
+      button:active {
+        box-shadow: 0 0 9e9q inset #0009;
+        background-color: var(--c);
+        color: #fff;
+      }
+    
+      button {
+        font-family: system-ui, sans-serif;
+        font-size: 1.2rem;
+        cursor: pointer;
+        padding: .1em .6em;
+         
+        border: none;
+      }
+      
+      
